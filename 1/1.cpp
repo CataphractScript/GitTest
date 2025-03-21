@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 // An optimized version of Bubble Sort 
@@ -19,18 +20,4 @@ void bubbleSort(vector<int>& arr) {
         if (!swapped)
             break;
     }
-}
-
-// Function to print a vector
-void printVector(const vector<int>& arr) {
-    for (int num : arr)
-        cout << " " << num;
-}
-
-int main() {
-    vector<int> arr = { 64, 34, 25, 12, 22, 11, 90 };
-    bubbleSort(arr);
-    cout << "Sorted array: \n";
-    printVector(arr);
-    return 0;
 }
