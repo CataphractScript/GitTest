@@ -73,3 +73,19 @@ void printVector(vector<int>& arr)
         cout << arr[i] << " ";
     cout << endl;
 }
+
+// Driver code
+int main()
+{
+    vector<int> arr = { 12, 11, 13, 5, 6, 7 };
+    int n = arr.size();
+
+    cout << "Given vector is \n";
+    printVector(arr);
+
+    mergeSort(arr, 0, n - 1);
+
+    cout << "\nSorted vector is \n";
+    printVector(arr);
+    return 0;
+}
